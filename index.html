@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Register')">
+        Register
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'List')">
+        List Peserta
+      </button>
+    </div>
+
+    <div id="Register" class="tabcontent">
+      <h3>Register Peserta</h3>
+      <form id="student_form" onsubmit="">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="" required minlength="10"/><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="" min="25" /><br /><br />
+        
+        <input type="button" value="Submit" onclick="setAction()" />
+      </form>
+    </div>
+
+    <div id="List" class="tabcontent">
+      <h3>List Peserta</h3>
+      <div id="empTable"></div>
+    </div>
+
+   
+        <!-- my javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
